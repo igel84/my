@@ -1,0 +1,574 @@
+/* line 1, ../../app/stylesheets/style.scss */
+html {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 2, ../../app/stylesheets/style.scss */
+a {
+  color: #963;
+  border: none;
+}
+/* line 4, ../../app/stylesheets/style.scss */
+a:hover {
+  color: #C60;
+  border: none;
+}
+
+/* line 6, ../../app/stylesheets/style.scss */
+body {
+  background: #333333 url("image/style/newbg.gif") repeat-x;
+  color: #333;
+  font: normal 62.5% Tahoma, sans-serif;
+}
+
+/* line 11, ../../app/stylesheets/style.scss */
+p, code, ul {
+  padding-bottom: 10px;
+}
+
+/* line 12, ../../app/stylesheets/style.scss */
+li {
+  list-style: none;
+}
+
+/* line 13, ../../app/stylesheets/style.scss */
+h1 {
+  font: normal 1.8em Tahoma,sans-serif;
+  margin-bottom: 4px;
+}
+
+/* line 17, ../../app/stylesheets/style.scss */
+h2 {
+  font: normal 1.6em sans-serif;
+}
+
+/* line 18, ../../app/stylesheets/style.scss */
+h3 {
+  font: bold 1.1em sans-serif;
+}
+
+/* line 20, ../../app/stylesheets/style.scss */
+code {
+  background: #FFF;
+  border: 1px solid #EEE;
+  border-left: 6px solid #C1CAD3;
+  color: #666;
+  display: block;
+  font: normal 1em Tahoma,sans-serif;
+  line-height: 1.6em;
+  margin: 4px 0 12px;
+  padding: 8px 10px;
+  white-space: pre;
+}
+
+/* line 33, ../../app/stylesheets/style.scss */
+blockquote {
+  background: url("image/style/quote.gif") no-repeat;
+  display: block;
+  font: bold 0.9em Verdana,sans-serif;
+  padding-left: 26px;
+}
+
+/* line 40, ../../app/stylesheets/style.scss */
+big {
+  font-size: 1.1em;
+}
+
+/* line 42, ../../app/stylesheets/style.scss */
+h1, h2, h3 {
+  padding-top: 6px;
+}
+
+/* line 44, ../../app/stylesheets/style.scss */
+label {
+  display: block;
+  font-size: 0.9em;
+}
+
+/* misc */
+/* line 50, ../../app/stylesheets/style.scss */
+.clearer {
+  clear: both;
+}
+
+/* line 51, ../../app/stylesheets/style.scss */
+.left {
+  float: left;
+}
+
+/* line 52, ../../app/stylesheets/style.scss */
+.right {
+  float: right;
+}
+
+/* structure */
+/* line 55, ../../app/stylesheets/style.scss */
+.container {
+  background: #FFF;
+  font-size: 1.2em;
+  margin: 0 auto;
+  padding: 0 10px 0px;
+  width: 780px;
+  border-bottom: 4px solid #FFFFFF;
+}
+
+/* header */
+/* line 65, ../../app/stylesheets/style.scss */
+.top {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 0;
+}
+
+/* title */
+/* line 70, ../../app/stylesheets/style.scss */
+.header {
+  background: #FFF;
+  font-size: 1.2em;
+  height: 120px;
+  margin: 0 auto;
+  padding: 10px 10px 5px;
+  width: 780px;
+}
+
+/* line 78, ../../app/stylesheets/style.scss */
+.header .left, .header .right {
+  background: #A4A4A0;
+  color: #FFF;
+  height: 120px;
+}
+
+/* line 83, ../../app/stylesheets/style.scss */
+.logo {
+  margin-left: auto;
+  margin-right: auto;
+  width: 770px;
+  padding-left: 50px;
+  font: normal 2.8em "Trebuchet MS",sans-serif;
+  margin-top: 20px;
+  background-image: url("image/style/logo.png");
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+/* line 95, ../../app/stylesheets/style.scss */
+.logo a {
+  color: #D9D7CA;
+  text-decoration: none;
+}
+
+/* line 100, ../../app/stylesheets/style.scss */
+.logo a:hover {
+  color: #D9D7CA;
+  text-decoration: none;
+}
+
+/* line 105, ../../app/stylesheets/style.scss */
+.logo a:visisted {
+  color: #D9D7CA;
+  text-decoration: none;
+}
+
+/* line 109, ../../app/stylesheets/style.scss */
+.header .left {
+  background: url("image/style/header2.gif") no-repeat;
+  text-align: center;
+  width: 780px;
+  font: normal 2.8em "Trebuchet MS",sans-serif;
+  line-height: 120px;
+}
+
+/* line 116, ../../app/stylesheets/style.scss */
+.header .right p, .header .right h2 {
+  padding: 0 16px;
+}
+
+/* line 117, ../../app/stylesheets/style.scss */
+.header .right h2 {
+  padding-top: 16px;
+  font: normal 1.6em "Trebuchet MS",sans-serif;
+}
+
+/* navigation */
+/* line 120, ../../app/stylesheets/style.scss */
+.navigation {
+  border: 1px solid #000000;
+  border-color: #000000;
+  background: black url("image/style/nav.gif");
+  height: 41px;
+  margin: 0px;
+  paddin-top: 0px;
+}
+
+/* line 128, ../../app/stylesheets/style.scss */
+.navigation a {
+  background: black url("image/style/nav.gif");
+  border-right: 1px solid #000000;
+  color: #FFFFFF;
+  display: block;
+  float: left;
+  text-decoration: none;
+  font: bold 1em sans-serif;
+  line-height: 41px;
+  padding: 0 20px;
+  padding-top: 0px;
+}
+
+/* line 142, ../../app/stylesheets/style.scss */
+.floater {
+  margin-left: -66px;
+  background: url("image/style/floaterbg.gif");
+  background-repeat: no-repeat;
+  background-position: left;
+  height: 70px;
+  padding-left: 15px;
+  padding-top: 5px;
+}
+
+/* line 153, ../../app/stylesheets/style.scss */
+.navigation a:hover {
+  background-position: left bottom;
+  color: #DAD8CC;
+}
+
+/* main */
+/* line 156, ../../app/stylesheets/style.scss */
+.main {
+  border-top: 4px solid #FFF;
+  background: url("image/style/bgmain.gif") repeat-y;
+}
+
+/* sub navigation */
+/* line 163, ../../app/stylesheets/style.scss */
+.sidenav {
+  float: right;
+  width: 210px;
+}
+
+/* line 167, ../../app/stylesheets/style.scss */
+.sidenav h2 {
+  color: #5A5A43;
+  font: bold 1em Tahoma,sans-serif;
+  line-height: 25px;
+  padding-left: 12px;
+  display: block;
+  background-image: url("image/style/h2bg.gif");
+  background-repeat: no-repeat;
+  padding-top: 0px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+/* line 179, ../../app/stylesheets/style.scss */
+.sidenav ul {
+  padding: 0;
+  border-top: 1px solid #EAEADA;
+}
+
+/* line 183, ../../app/stylesheets/style.scss */
+.sidenav li {
+  border-bottom: 1px solid #EAEADA;
+}
+
+/* line 184, ../../app/stylesheets/style.scss */
+.sidenav li a {
+  font-size: 1.1em;
+  color: #554;
+  display: block;
+  padding: 8px 0 8px 5%;
+  text-decoration: none;
+  width: 95%;
+}
+
+/* line 192, ../../app/stylesheets/style.scss */
+.sidenav li a:hover {
+  background: #f0f0eb url("image/style/sidebarnavbg.gif");
+  color: #654;
+}
+
+/* content */
+/* line 198, ../../app/stylesheets/style.scss */
+.content {
+  float: left;
+  margin: 10px 0;
+  padding: 0 16px;
+  width: 531px;
+}
+
+/* line 204, ../../app/stylesheets/style.scss */
+.content .descr {
+  color: #664;
+  font-size: 0.9em;
+  margin-bottom: 6px;
+}
+
+/* line 209, ../../app/stylesheets/style.scss */
+.content li {
+  background: url("image/style/li.gif") no-repeat 0 30%;
+  padding: 1px 0 1px 16px;
+}
+
+/* line 213, ../../app/stylesheets/style.scss */
+.content p {
+  font-family: "Lucida Sans Unicode",sans-serif;
+}
+
+/* footer */
+/* line 216, ../../app/stylesheets/style.scss */
+.footer {
+  background: #333333;
+  color: #FFF;
+  font: bold 1em sans-serif;
+  padding: 0 16px;
+  line-height: 39px;
+  height: 39px;
+  margin-bottom: 10px;
+}
+
+/* line 225, ../../app/stylesheets/style.scss */
+.footer a, .footer a:hover {
+  color: #FFF;
+}
+
+/* posts */
+/* line 228, ../../app/stylesheets/style.scss */
+.post h1 a {
+  text-decoration: none;
+}
+
+/* line 229, ../../app/stylesheets/style.scss */
+.post h1 a:hover {
+  text-decoration: underline;
+}
+
+/* line 231, ../../app/stylesheets/style.scss */
+.post {
+  margin: 6px 0 2px;
+}
+
+/* line 232, ../../app/stylesheets/style.scss */
+.post .info {
+  padding: 5px 10px;
+  border: 1px solid #E3E4E4;
+  background: #F5F5F5;
+  color: #555;
+  margin: 2px 0 4px;
+}
+
+/* line 239, ../../app/stylesheets/style.scss */
+.post img {
+  border: 4px solid #DDD;
+  margin: 4px 0;
+}
+
+/* line 240, ../../app/stylesheets/style.scss */
+.post a img {
+  border: none;
+}
+
+/* line 241, ../../app/stylesheets/style.scss */
+.post a:hover img {
+  border-color: #CCC;
+}
+
+/* line 243, ../../app/stylesheets/style.scss */
+.info a {
+  text-decoration: none;
+}
+
+/* line 244, ../../app/stylesheets/style.scss */
+.info a:hover {
+  text-decoration: underline;
+}
+
+/* comments */
+/* line 247, ../../app/stylesheets/style.scss */
+.content ol li {
+  list-style: none;
+  background: none;
+}
+
+/* line 249, ../../app/stylesheets/style.scss */
+#commentlist li {
+  margin-bottom: 1.5em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #700000;
+  list-style: none;
+}
+
+/* line 255, ../../app/stylesheets/style.scss */
+#commentform {
+  margin: 1em 0;
+  background: #FAFAFA;
+  width: 280px;
+}
+
+/* line 260, ../../app/stylesheets/style.scss */
+.commentmetadata {
+  padding: 2px 0 4px;
+}
+
+/* line 261, ../../app/stylesheets/style.scss */
+.commentmetadata a {
+  color: #664;
+}
+
+/* line 263, ../../app/stylesheets/style.scss */
+textarea.styled {
+  width: 280px;
+}
+
+/* line 265, ../../app/stylesheets/style.scss */
+.styled {
+  font-size: 1.1em;
+  background: #F8F7F6;
+  border: 1px solid #D6D3D3;
+}
+
+/* line 270, ../../app/stylesheets/style.scss */
+.styled:hover {
+  background: #FFF;
+  border: 1px solid #D6D3D3;
+}
+
+/* line 274, ../../app/stylesheets/style.scss */
+.styled:focus {
+  background: #FFF;
+  border: 1px solid #939793;
+}
+
+/* line 278, ../../app/stylesheets/style.scss */
+#commentform input {
+  margin-bottom: 3px;
+}
+
+/* line 280, ../../app/stylesheets/style.scss */
+a img {
+  border: none;
+}
+
+/* calendar */
+/* line 283, ../../app/stylesheets/style.scss */
+#wp-calendar {
+  color: #A0A0A0;
+}
+
+/* line 285, ../../app/stylesheets/style.scss */
+.sidenav table caption {
+  border-bottom-color: #000;
+}
+
+/* line 287, ../../app/stylesheets/style.scss */
+.sidenav table thead tr {
+  border-bottom-color: #000;
+  color: #A53512;
+}
+
+/* line 292, ../../app/stylesheets/style.scss */
+.sidenav table th {
+  border-bottom-color: #000;
+}
+
+/* line 294, ../../app/stylesheets/style.scss */
+.sidenav table td#today {
+  border-color: #000;
+  color: #A53512;
+}
+
+/* line 299, ../../app/stylesheets/style.scss */
+.sidenav table td a {
+  border-bottom-color: #000;
+  background-color: #EDF3DE;
+}
+
+/* line 304, ../../app/stylesheets/style.scss */
+.sidenav table tfoot {
+  border-top-color: #000;
+}
+
+/* line 306, ../../app/stylesheets/style.scss */
+.sidenav table tfoot a {
+  background: none;
+}
+
+/* calendar
+--------------------------------------------------*/
+/* line 310, ../../app/stylesheets/style.scss */
+#wp-calendar {
+  display: inline-table;
+  border-collapse: collapse;
+  width: 185px;
+  margin: 0px 10px 0 10px;
+  text-align: center;
+}
+
+/* line 318, ../../app/stylesheets/style.scss */
+.sidenav table caption {
+  margin: -5px 10px 0 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid;
+  letter-spacing: 0.1em;
+}
+
+/* line 325, ../../app/stylesheets/style.scss */
+.sidenav table thead tr {
+  border-bottom: 1px solid;
+}
+
+/* line 327, ../../app/stylesheets/style.scss */
+.sidenav table th {
+  border-bottom: 1px solid;
+}
+
+/* line 329, ../../app/stylesheets/style.scss */
+.sidenav table td {
+  width: 225px;
+  /* maximaize width; honestly, I don't know much about tables... */
+  padding: 1px;
+  font-size: 0.9em;
+}
+
+/* line 335, ../../app/stylesheets/style.scss */
+.sidenav table td#today {
+  padding: 0;
+  border: 1px solid;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/* line 342, ../../app/stylesheets/style.scss */
+.sidenav table td a {
+  display: block;
+  border-bottom: 1px solid;
+  font-weight: bold;
+  font-size: 1.15em;
+}
+
+/* line 349, ../../app/stylesheets/style.scss */
+.sidenav table tfoot {
+  border-top: 1px solid;
+}
+
+/* line 350, ../../app/stylesheets/style.scss */
+.sidenav table tfoot a {
+  border: none;
+  font-weight: bold;
+}
+
+/* line 354, ../../app/stylesheets/style.scss */
+.sidenav table tfoot #prev a {
+  text-align: left;
+}
+
+/* line 355, ../../app/stylesheets/style.scss */
+.sidenav table tfoot #next a {
+  text-align: center;
+}
+
+/* line 357, ../../app/stylesheets/style.scss */
+#searchform {
+  padding: 10px;
+}
