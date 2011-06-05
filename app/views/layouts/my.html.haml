@@ -1,0 +1,51 @@
+!!!
+%html
+	%head
+		%title site
+		= stylesheet_link_tag :all
+		= javascript_include_tag :defaults 
+		= csrf_meta_tag
+	%body
+		.logo
+			%a Заказ сайтов
+		.top
+			.header
+				.left		
+		.container
+			.navigation
+				= link_to('Главная', { :controller => 'homes', :action => 'index' }, :class => 'active')
+				%a Контакты				
+				= flash[:pagenum]
+				%a Цены
+				%li.page_item.page-item-2
+					%a Блог
+					.clearer
+						%span
+			.main
+				.content
+					= yield
+				.sidenav#sidebar
+					%h2 Категории
+					%ul
+						%li.cat-item.cat-item-1
+							%a Новости
+					%h2 Архив
+					%ul
+						%li.cat-item.cat-item-1
+							%a Новости
+					%h2 Блоги
+					%ul
+					%h2 Поиск
+					%ul
+						%li
+							%form#searchform{:method => "get", :action => "/wordpresslive/index.php"}
+								%input#s{:type => "text", :value => "", :name => "s", :size => "17"}
+								%input#sidebarsubmit{:type => "submit", :value => "Поиск", :style => "font-size: 10px;"}
+				.clearer
+					%span
+				.footer
+					%font{:size => "1", :face => "calibri"} 
+						Локализация:&nbsp; XTemplate.ru: 
+						%a{:href => "localhost:3000", :style => "color: gray;"} шаблоны для wordpress
+				.clearer
+					%span
