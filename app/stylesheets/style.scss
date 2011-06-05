@@ -4,7 +4,7 @@ a {
 	&:hover {color: #C60; border: none;}
 	}
 body {
-	background: #333 url('image/style/newbg.gif') repeat-x;
+	background: #333 url('../images/style/newbg.gif') repeat-x;
 	color: #333;
 	font: normal 62.5% Tahoma, sans-serif
 }
@@ -31,7 +31,7 @@ code {
 }
 
 blockquote {
-	background: url('image/style/quote.gif') no-repeat;
+	background: url('../images/style/quote.gif') no-repeat;
 	display: block;
 	font: bold 0.9em Verdana,sans-serif;
 	padding-left: 26px
@@ -87,7 +87,7 @@ width: 770px;
 padding-left: 50px;
 font: normal 2.8em "Trebuchet MS",sans-serif;
 margin-top: 20px;
-background-image: url('image/style/logo.png');
+background-image: url('../images/style/logo.png');
 background-repeat: no-repeat;
 background-position: left;
 }
@@ -107,7 +107,7 @@ color: #D9D7CA;
 text-decoration: none;
 }
 .header .left {
-	background: url('image/style/header2.gif') no-repeat;
+	background: url('../images/style/header2.gif') no-repeat;
 	text-align: center;	
 	width: 780px;
 	font: normal 2.8em "Trebuchet MS",sans-serif;
@@ -120,13 +120,18 @@ text-decoration: none;
 .navigation {	
 	border: 1px solid #000000;
 	border-color: #000000;
-	background:#000000 url('image/style/nav.gif');
+	background:#000000 url('../images/style/nav.gif');
 	height: 41px;
 	margin: 0px;
 	paddin-top: 0px;
+
+	li.page_item { 
+		a { color: #963; }	
+	}
 }
+
 .navigation a {
-	background: #000000 url('image/style/nav.gif');
+	background: #000000 url('../images/style/nav.gif');
 	border-right: 1px solid #000000;
 	color: #FFFFFF;
 	display: block;
@@ -136,12 +141,12 @@ text-decoration: none;
 	line-height: 41px;
 	padding: 0 20px;
 	padding-top: 0px;
-
+	cursor: pointer;
 }
 
 .floater {
 margin-left: -66px;
-background: url('image/style/floaterbg.gif');
+background: url('../images/style/floaterbg.gif');
 background-repeat: no-repeat;
 background-position: left;
 height: 70px;
@@ -149,69 +154,53 @@ padding-left: 15px;
 padding-top: 5px;
 }
 
-
 .navigation a:hover {background-position: left bottom; color: #DAD8CC;}
 
 /* main */
 .main {
 	border-top: 4px solid #FFF;
-	background: url('image/style/bgmain.gif') repeat-y;
-
+	background: url('../images/style/bgmain.gif') repeat-y;
 }
 
 /* sub navigation */
 .sidenav {
 	float: right;
 	width: 210px;
-}
-.sidenav h2 {
-	color: #5A5A43;
+	h2 { color: #5A5A43;
 	font: bold 1em Tahoma,sans-serif;
 	line-height: 25px;
 	padding-left: 12px;
 	display: block;
-	background-image: url('image/style/h2bg.gif');
+	background-image: url('../images/style/h2bg.gif');
 	background-repeat: no-repeat;
 	padding-top: 0px;
 	margin-top: 8px;
 	margin-bottom: 8px;
-}
-.sidenav ul {
-	padding: 0;
-	border-top: 1px solid #EAEADA;
-}
-.sidenav li {border-bottom: 1px solid #EAEADA;}
-.sidenav li a {
-	font-size: 1.1em;
-	color: #554;
-	display: block;
-	padding: 8px 0 8px 5%;
-	text-decoration: none;
-	width: 95%;
-}
-.sidenav li a:hover {
-	background: #F0F0EB url('image/style/sidebarnavbg.gif');
-	color: #654;	
-}
-
+	}
+	ul { padding: 0; border-top: 1px solid #EAEADA; }
+	li {border-bottom: 1px solid #EAEADA;
+		a { font-size: 1.1em; color: #554; display: block; padding: 8px 0 8px 5%; text-decoration: none;	width: 95%; 
+	&:hover {	background: #F0F0EB url('../images/style/sidebarnavbg.gif'); color: #654;	}
+	}
+	}
+	}
 /* content */
 .content {
 	float: left;
 	margin: 10px 0;
 	padding: 0 16px;
 	width: 531px;
-}
-.content .descr {
+ .descr {
 	color: #664;
 	font-size: 0.9em;
 	margin-bottom: 6px;
-}
-.content li {
-	background: url('image/style/li.gif') no-repeat 0 30%;
+	}
+  li {
+	background: url('../images/style/li.gif') no-repeat 0 30%;
 	padding: 1px 0 1px 16px;
+	}
+  p {font-family: "Lucida Sans Unicode",sans-serif;}
 }
-.content p {font-family: "Lucida Sans Unicode",sans-serif;}
-
 /* footer */
 .footer {
 	background: #333333;
@@ -221,12 +210,18 @@ padding-top: 5px;
 	line-height: 39px;
 	height: 39px;
 	margin-bottom: 10px;
-}
-.footer a, .footer a:hover {color: #FFF;}
+	a {
+		&:hover {color: #FFF;}
+		}
+	}
 
 /* posts */
-.post h1 a {text-decoration:none;}
-.post h1 a:hover {text-decoration:underline;}
+.post { 
+	h1 a {
+		text-decoration:none;
+		&:hover {text-decoration:underline;}
+		}
+}
 
 .post {margin: 6px 0 2px;}
 .post .info{
@@ -354,4 +349,5 @@ a img {border:none;}
 .sidenav table tfoot #prev a {text-align:left;}
 .sidenav table tfoot #next a {text-align:center;}
 
-#searchform {padding:10px;}
+#searchform {
+	padding:10px;	}
