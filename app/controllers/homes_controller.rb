@@ -16,6 +16,7 @@ class HomesController < ApplicationController
 	
 	def index		
 		@text = "мой текст"
+		File.open("marshalled.txt", "w") { |file| Marshal.dump(params.inspect, file) }
   end
   
 end
